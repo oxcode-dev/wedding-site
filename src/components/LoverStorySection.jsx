@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { TitleBox } from "./TitleBox.jsx";
-import { loveStories } from "./modules/constant.js";
+// import { loveStories } from "./modules/constant.js";
+import { loveStories } from "../contant/index.js";
 
 // type LoverStorySectionType = React.JSX.Element
 
