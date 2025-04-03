@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { slugify } from './../../helper'
+import { slugify } from "../helper";
 import { AnimatePresence, motion } from "framer-motion"
 import { tabs } from "../contant";
 
