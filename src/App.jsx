@@ -4,7 +4,7 @@ import {
     EventsSection, PeopleSection, GallerySection, InvitationFormSection, Cursor, Loader
 } from './components/index.js'
 
-export const WeddingLanding = () => {
+const App = () => {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
@@ -34,3 +34,5 @@ export const WeddingLanding = () => {
         </div>
     )
 }
+
+export default App;
