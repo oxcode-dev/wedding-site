@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { 
     Navbar, HeroSection, CountDownSection, AboutCoupleSection, LoverStorySection,
     EventsSection, PeopleSection, GallerySection, InvitationFormSection, Cursor, Loader
-} from './components/index.js'
+} from './components/index.ts'
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true)
