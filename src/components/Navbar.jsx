@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { slugify } from './../../helper'
 import { AnimatePresence, motion } from "framer-motion"
-import { tabs } from "./modules/constant";
+import { tabs } from "../contant";
 
 const Links = ({ setIsToggled }) => {
     const variants = {
