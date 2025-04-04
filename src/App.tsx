@@ -8,9 +8,7 @@ const App = () => {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        const timeout = setTimeout(() => setIsLoading(false), 3000)
-
-        // clearTimeout(timeout)
+        setTimeout(() => setIsLoading(false), 3000)
     }, [isLoading])
     return (
         <div id='wedding' className='w-full overflow-x-hidden'>
