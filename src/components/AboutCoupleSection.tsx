@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { TitleBox } from './TitleBox'
+import { TitleBox } from './TitleBox.tsx'
 export const AboutCoupleSection = () => {
     const variants = {
         left: { x: -150, transition: { staggerChildren: 0.1 }},

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TitleBox } from "./TitleBox.jsx";
+import { TitleBox } from "./TitleBox.tsx";
 import { loveStories } from "../constant/index.ts";
 
 export const LoverStorySection = () => {
