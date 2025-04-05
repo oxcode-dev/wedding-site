@@ -5,7 +5,7 @@ import { AboutCoupleSection } from './AboutCoupleSection'
 import { LoverStorySection } from './LoverStorySection'
 import { EventsSection } from './EventsSection'
 import { PeopleSection } from './PeopleSection'
-import { GallerySection } from './GallerySection'
+import { GallerySection } from './GallerySection.tsx'
 import { InvitationFormSection } from './InvitationFormSection'
 import { TitleBox } from "./TitleBox";
 import { Cursor } from "./Cursor";

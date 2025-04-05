@@ -14,7 +14,15 @@ const variants = {
         opacity: 1,
     },
 }
-const Modal = ({ isToggled, setToggled, children }) => {
+
+interface ModalProps {
+    isToggled: boolean,
+    setToggled: () => void,
+    // setToggled: (isToggle:boolean) => void,
+    children?: React.ReactNode
+}
+
+const Modal = ({ isToggled, setToggled, children }: ModalProps) => {
     useEffect(() => {
         document.body.style.overflow = isToggled ? 'hidden' : 'auto'
     }, [isToggled])
@@ -48,11 +56,11 @@ const Modal = ({ isToggled, setToggled, children }) => {
 };
 
 export const GallerySection = () => {
-    const [isToggled, setToggled] = useState(false)
-    const [selectedImage, setSelectedImage] = useState(null)
-    const manImg = 'https://images.pexels.com/photos/845457/pexels-photo-845457.jpeg?auto=compress&cs=tinysrgb&w=800'
+    const [isToggled, setToggled] = useState<boolean>(false)
+    const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined)
+    const manImg: string = 'https://images.pexels.com/photos/845457/pexels-photo-845457.jpeg?auto=compress&cs=tinysrgb&w=800'
 
-    const handleOpenModal = (e) => {
+    const handleOpenModal = (e: React.FormEvent) => {
         setToggled(true)
         setSelectedImage(manImg)
         e.preventDefault();
