@@ -1,4 +1,3 @@
-import React from "react";
 import { TitleBox } from "./TitleBox";
 
 export const InvitationFormSection = () => {
@@ -41,7 +40,7 @@ export const InvitationFormSection = () => {
 
                             <div className='py-2'>
                                 <textarea
-                                    type='text' placeholder='Your Name' required
+                                    placeholder='Your Name' required
                                     className='border border-gray-200 rounded-lg h-28 w-full focus:outline-none pl-2' 
                                 ></textarea>
                             </div>

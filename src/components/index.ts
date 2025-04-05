@@ -6,7 +6,7 @@ import { LoverStorySection } from './LoverStorySection'
 import { EventsSection } from './EventsSection'
 import { PeopleSection } from './PeopleSection'
 import { GallerySection } from './GallerySection.tsx'
-import { InvitationFormSection } from './InvitationFormSection'
+import { InvitationFormSection } from './InvitationFormSection.tsx'
 import { TitleBox } from "./TitleBox";
 import { Cursor } from "./Cursor";
 import { Loader } from "./Loader";
