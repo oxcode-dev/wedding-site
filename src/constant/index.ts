@@ -60,7 +60,7 @@ export const eventsDetails: eventsDetailsType[] = [
     },
 ]
 
-type bridemaidsType = {
+export type bridemaidsType = {
     name: string,
     isChief: boolean,
     img: string,

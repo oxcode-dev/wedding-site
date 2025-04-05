@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { TitleBox } from "./TitleBox";
 import { motion, AnimatePresence } from 'framer-motion'
-import { bridemaids, groomsmen } from "../constant/index";
+import { bridemaids, groomsmen, bridemaidsType } from "../constant/index";
 
 
 const tabs = ['bridemaids', 'groomsmen'];
@@ -16,15 +16,21 @@ const variants = {
     cardAnimate: { y: 0, opacity: 1 },
     cardTransition: { duration: 0.4 },
 }
-const PeopleCard = ({ person }) => {
+
+type PeopleCardType = {
+    person: bridemaidsType | undefined
+}
+
+const PeopleCard = ({ person }: PeopleCardType) => {
     return (
         <>
             <motion.div 
                 viewport={{ once: true }}
-                variants={variants} initial="cardInitial" whileInView='cardAnimate' transition='cardTransition'
+                // @ts-ignore
+                variants={variants} initial="cardInitial" whileInView='cardAnimate' transition="    cardTransition"
                 className='h-full w-full relative group'
             >
-                <motion.img src={person.img} variants={variants} className='h-full w-full object-cover' />
+                <motion.img src={person?.img} variants={variants} className='h-full w-full object-cover' />
                 <motion.div variants={variants} className='flex md:hidden md:group-hover:flex md:absolute w-full md:bg-gray-500/80 md:bottom-0 md:h-12'>
                     <motion.p variants={variants} className='text-gray-500 md:text-white text-xl sm:px-2 py-2'>{person?.name || 'N/A'}</motion.p>
                 </motion.div>
@@ -33,12 +39,17 @@ const PeopleCard = ({ person }) => {
     )
 } 
 
-const PeopleLists = ({ list }) => {
+type PeopleListsType = {
+    list: bridemaidsType[]
+}
+const PeopleLists = ({ list } : PeopleListsType) => {
     const main = list.find(n => n.isChief === true)
     const friends = list.filter(n => n.isChief === false)
+
     return (
         <>
             <motion.div 
+                // @ts-ignore
                 variants={variants} initial="boxInitial" whileInView='boxAnimate' transition='boxTransition'
                 className='flex flex-wrap w-full max-w-6xl mx-auto'
             >
@@ -75,6 +86,7 @@ const PeopleContainer = () => {
                         variants={variants}
                         initial='tabInitial'
                         whileInView='tabAnimate'
+                        // @ts-ignore
                         transition='tabTransition'
                         className="w-full flex justify-center space-x-3"
                     >
@@ -100,6 +112,7 @@ const PeopleContainer = () => {
                             initial='boxInitial'
                             whileInView='boxAnimate'
                             exit='boxInitial'
+                            // @ts-ignore
                             transition='boxTransition'
                             className="pt-12"
                         >
