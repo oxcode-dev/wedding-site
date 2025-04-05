@@ -1,4 +1,4 @@
-import { Navbar } from "./Navbar";
+import { Navbar } from "./Navbar.tsx";
 import { HeroSection } from "./HeroSection";
 import { CountDownSection } from "./CountdownSection";
 import { AboutCoupleSection } from './AboutCoupleSection'

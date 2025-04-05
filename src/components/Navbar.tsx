@@ -3,7 +3,10 @@ import { slugify } from "../helper";
 import { AnimatePresence, motion } from "framer-motion"
 import { tabs } from "../contant";
 
-const Links = ({ setIsToggled }) => {
+interface LinksProps {
+    setIsToggled: (isToggle:boolean) => void
+}
+const Links = ({ setIsToggled }: LinksProps) => {
     const variants = {
         open: {
             transition: {
@@ -28,9 +31,9 @@ const Links = ({ setIsToggled }) => {
         },
     };
 
-    const handleClick = (e) => {
+    const handleClick = (e: React.FormEvent) => {
         setIsToggled(false)
-        // e.preventDefault()
+        e.preventDefault()
     }
   
     return (
@@ -52,7 +55,7 @@ const Links = ({ setIsToggled }) => {
     );
 };
 export const Navbar = () => {
-    const [isToggled, setIsToggled] = useState(false)
+    const [isToggled, setIsToggled] = useState<boolean>(false)
     const variants = {
         initial: { y: -100, transition: { staggerChildren: 0.1 }},
         animate: { y: 0, transition: { duration: 0.75, staggerChildren: 0.1, delayChildren: 0.3}},
@@ -74,7 +77,7 @@ export const Navbar = () => {
         },
     }
 
-    const handleOpenModal = (e) => {
+    const handleOpenModal = (e: React.FormEvent) => {
         setIsToggled(!isToggled)
         e.preventDefault();
     }
@@ -131,7 +134,7 @@ export const Navbar = () => {
             <motion.div className="flex flex-col items-center justify-center text-gray-700 bg-white" animate={isToggled ? "open" : "closed"}>
                 <motion.div className="fixed top-0 left-0 bottom-0 bg-white w-full z-[1000000]" variants={variants}>
                     <div className="pt-4 flex justify-between px-4 items-center absolute w-full">
-                        <h1 href="#"
+                        <h1
                             className='text-3xl text-red-600'
                         >
                             <a href="#">Jovian&hearts;2024</a>
