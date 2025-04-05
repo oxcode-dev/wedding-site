@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TitleBox } from "./TitleBox";
+import { TitleBox } from "./TitleBox.tsx";
 import { motion, AnimatePresence } from 'framer-motion'
 import { bridemaids, groomsmen, bridemaidsType } from "../constant/index";
 

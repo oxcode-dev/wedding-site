@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TitleBox } from "./TitleBox";
+import { TitleBox } from "./TitleBox.tsx";
 import { eventsDetails } from "../constant/index";
 
 export const EventsSection = () => {
