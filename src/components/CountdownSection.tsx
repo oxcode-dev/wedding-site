@@ -1,23 +1,24 @@
 import { motion } from "framer-motion"
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 export const CountDownSection = () => {
-    const [days, setDays] = useState(0)
-    const [hours, setHours] = useState(0)
-    const [minutes, setMinutes] = useState(0)
-    const [seconds, setSeconds] = useState(0)
+    const [days, setDays] = useState<number | string>(0)
+    const [hours, setHours] = useState<number | string>(0)
+    const [minutes, setMinutes] = useState<number | string>(0)
+    const [seconds, setSeconds] = useState<number | string>(0)
     useEffect(() => {
         const countdown = () => {
-            const currentTime = new Date();
-            const currentYear = currentTime.getFullYear();
-            const xmasDate = new Date(`June 24 ${currentYear + 1} 00:00:00`);
+            const currentTime : Date | number = new Date();
+            const currentYear: number = currentTime.getFullYear();
+            const xmasDate: Date | number = new Date(`June 24 ${currentYear + 1} 00:00:00`);
 
-            const diff = xmasDate - currentTime;
+            // @ts-ignore
+            const diff: number = xmasDate - currentTime;
     
-            const d = Math.floor(diff / 1000 / 60 / 60 / 24);
-            const h = Math.floor(diff / 1000 / 60 / 60) % 24;
-            const m = Math.floor(diff / 1000 / 60) % 60;
-            const s = Math.floor(diff / 1000) % 60;
+            const d:number = Math.floor(diff / 1000 / 60 / 60 / 24);
+            const h:number = Math.floor(diff / 1000 / 60 / 60) % 24;
+            const m:number = Math.floor(diff / 1000 / 60) % 60;
+            const s:number = Math.floor(diff / 1000) % 60;
     
             setDays(d)
             setHours(h < 10 ? "0" + h : h)
@@ -25,9 +26,7 @@ export const CountDownSection = () => {
             setSeconds(s < 10 ? "0" + s : s)
         };
 
-        const interval = setInterval(countdown, 1000);
-
-        // clearInterval(interval)
+        setInterval(countdown, 1000);
     }, [])
 
     const variants = {
