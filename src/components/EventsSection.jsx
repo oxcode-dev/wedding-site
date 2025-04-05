@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { TitleBox } from "./TitleBox";
-import { eventsDetails } from "../contant/index";
+import { eventsDetails } from "../constant/index";
 
 export const EventsSection = () => {
     const variants = {

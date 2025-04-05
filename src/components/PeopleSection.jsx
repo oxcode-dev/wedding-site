@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TitleBox } from "./TitleBox";
 import { motion, AnimatePresence } from 'framer-motion'
-import { bridemaids, groomsmen } from "../contant/index";
+import { bridemaids, groomsmen } from "../constant/index";
 
 
 const tabs = ['bridemaids', 'groomsmen'];

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { slugify } from "../helper";
 import { AnimatePresence, motion } from "framer-motion"
-import { tabs } from "../contant";
+import { tabs } from "../constant";
 
 interface LinksProps {
     setIsToggled: (isToggle:boolean) => void
