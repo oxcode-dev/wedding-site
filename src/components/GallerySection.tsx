@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TitleBox } from "./TitleBox";
+import { TitleBox } from "./TitleBox.tsx";
 import { motion, AnimatePresence } from "framer-motion";
 
 const variants = {

@@ -1,4 +1,4 @@
-import { TitleBox } from "./TitleBox";
+import { TitleBox } from "./TitleBox.tsx";
 
 export const InvitationFormSection = () => {
     const bgImage = 'https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
