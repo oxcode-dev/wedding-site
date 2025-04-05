@@ -27,7 +27,7 @@ export const loveStories: loveStoriesType[] = [
     },
 ]
 
-export const tabs = [ 'couple', 'our story', 'events', 'people', 'gallery', 'wishes']
+export const tabs: string[] = [ 'couple', 'our story', 'events', 'people', 'gallery', 'wishes']
 
 type eventsDetailsType = {
     title: string,
