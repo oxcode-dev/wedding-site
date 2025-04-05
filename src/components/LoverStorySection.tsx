@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { TitleBox } from "./TitleBox.jsx";
 import { loveStories } from "../constant/index.ts";
 
