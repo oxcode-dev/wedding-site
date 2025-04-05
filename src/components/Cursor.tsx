@@ -5,11 +5,11 @@ export const Cursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
-        const mouseMove = (e) => {
-            setPosition({ x: e.clientX, y: e.clientY });
+        const mouseMove = (e:React.MouseEvent) => {
+            setPosition({ x: e.clientX ?? 0, y: e.clientY ?? 0 });
         };
 
-        window.addEventListener("mousemove", mouseMove);
+        window.addEventListener("mousemove", event => mouseMove(event));
 
         return () => {
             window.removeEventListener("mousemove", mouseMove);

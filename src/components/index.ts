@@ -7,8 +7,8 @@ import { EventsSection } from './EventsSection'
 import { PeopleSection } from './PeopleSection.tsx'
 import { GallerySection } from './GallerySection.tsx'
 import { InvitationFormSection } from './InvitationFormSection.tsx'
-import { TitleBox } from "./TitleBox";
-import { Cursor } from "./Cursor";
+import { TitleBox } from "./TitleBox.tsx";
+import { Cursor } from "./Cursor.tsx";
 import { Loader } from "./Loader";
 
 export {
