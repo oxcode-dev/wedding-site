@@ -10,7 +10,7 @@ const variants = {
     }
 }
 
-export const Loader = ({ isLoading }) => {
+export const Loader = ({ isLoading }: { isLoading: boolean}) => {
     
     return (
         <AnimatePresence>
