@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import React from 'react'
 const hero = 'https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
 
 export const HeroSection = () => {

@@ -1,5 +1,5 @@
 import { Navbar } from "./Navbar.tsx";
-import { HeroSection } from "./HeroSection";
+import { HeroSection } from "./HeroSection.tsx";
 import { CountDownSection } from "./CountdownSection.tsx";
 import { AboutCoupleSection } from './AboutCoupleSection'
 import { LoverStorySection } from './LoverStorySection'
