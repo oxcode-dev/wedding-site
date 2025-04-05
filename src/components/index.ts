@@ -1,6 +1,6 @@
 import { Navbar } from "./Navbar.tsx";
 import { HeroSection } from "./HeroSection";
-import { CountDownSection } from "./CountdownSection";
+import { CountDownSection } from "./CountdownSection.tsx";
 import { AboutCoupleSection } from './AboutCoupleSection'
 import { LoverStorySection } from './LoverStorySection'
 import { EventsSection } from './EventsSection'
