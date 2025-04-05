@@ -9,7 +9,7 @@ import { GallerySection } from './GallerySection.tsx'
 import { InvitationFormSection } from './InvitationFormSection.tsx'
 import { TitleBox } from "./TitleBox.tsx";
 import { Cursor } from "./Cursor.tsx";
-import { Loader } from "./Loader";
+import { Loader } from "./Loader.tsx";
 
 export {
     Navbar,
