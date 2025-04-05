@@ -9,10 +9,10 @@ export const Cursor = () => {
             setPosition({ x: e.clientX ?? 0, y: e.clientY ?? 0 });
         };
 
-        window.addEventListener("mousemove", event => mouseMove(event));
+        window.addEventListener("mousemove", () => mouseMove);
 
         return () => {
-            window.removeEventListener("mousemove", mouseMove);
+            window.removeEventListener("mousemove",() =>  mouseMove);
         };
     }, []);
 
