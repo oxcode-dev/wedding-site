@@ -18,7 +18,6 @@ const variants = {
 interface ModalProps {
     isToggled: boolean,
     setToggled: () => void,
-    // setToggled: (isToggle:boolean) => void,
     children?: React.ReactNode
 }
 
