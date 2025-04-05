@@ -1,4 +1,10 @@
-export const loveStories = [
+type loveStoriesType = {
+    title: string,
+    date: string,
+    img: string,
+}
+
+export const loveStories: loveStoriesType[] = [
     {
         title: 'First Meet',
         date: 'Saturday, July 1st, 2023',
@@ -23,7 +29,14 @@ export const loveStories = [
 
 export const tabs = [ 'couple', 'our story', 'events', 'people', 'gallery', 'wishes']
 
-export const eventsDetails = [
+type eventsDetailsType = {
+    title: string,
+    date: string,
+    img: string,
+    time: string,
+    venue: string,
+}
+export const eventsDetails: eventsDetailsType[] = [
     {
         title: 'The Reception',
         date: 'August 1st, 2024',
@@ -47,7 +60,12 @@ export const eventsDetails = [
     },
 ]
 
-export const bridemaids = [
+type bridemaidsType = {
+    name: string,
+    isChief: boolean,
+    img: string,
+}
+export const bridemaids: bridemaidsType[] = [
     {
         name: 'Patience Gates',
         img: 'https://i.pinimg.com/474x/98/3e/45/983e452644ebb81680c60de3f2128a9e.jpg',
@@ -75,7 +93,7 @@ export const bridemaids = [
     },
 ]
 
-export const groomsmen = [
+export const groomsmen: bridemaidsType[] = [
     {
         name: 'Charles Gates',
         img: 'https://i.pinimg.com/474x/6f/42/f7/6f42f7337ff905c9820da0c432c67881.jpg',
