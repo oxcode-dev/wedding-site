@@ -1,7 +1,6 @@
-import React from "react";
 import {motion} from 'framer-motion'
 
-export const TitleBox = ({ title }) => {
+export const TitleBox = ({ title }: {title: string}) => {
     const variants = {
         hidden: { y: -50, opacity: 0, },
         show: { 
