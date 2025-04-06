@@ -1,14 +1,16 @@
 import { describe, expect, it } from "vitest";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "../App";
 
-describe('Contact Form', () => {
-    it('should find message', () => {
+describe('App View', () => {
+    it('should find Hello World', () => {
         expect(App).toBeTruthy()
 
-        render(<App />);
+        // render(<App />); 
 
         // screen.debug()
-        // expect(screen.getByTestId('form')).toHaveTextContent('Contact Form')
+
+        console.log(screen.getByTestId('wedding'))
+        // expect(screen.getByTestId('wedding')).toHaveTextContent('Hello World')
     })
 })

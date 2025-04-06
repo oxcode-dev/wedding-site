@@ -12,6 +12,7 @@ const App = () => {
     }, [isLoading])
     return (
         <div id='wedding' className='w-full overflow-x-hidden'>
+            Hello World
             <Cursor />
             <Loader isLoading={isLoading} />
             {
