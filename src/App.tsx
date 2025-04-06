@@ -11,8 +11,7 @@ const App = () => {
         setTimeout(() => setIsLoading(false), 3000)
     }, [isLoading])
     return (
-        <div id='wedding' className='w-full overflow-x-hidden'>
-            Hello World
+        <div id='wedding' data-testid="wedding" className='w-full overflow-x-hidden'>
             <Cursor />
             <Loader isLoading={isLoading} />
             {
