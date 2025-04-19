@@ -14,3 +14,4 @@ describe('App View', () => {
         // expect(screen.getByTestId('wedding')).toHaveTextContent('Hello World')
     })
 })
+
