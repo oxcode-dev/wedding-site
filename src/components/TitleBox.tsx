@@ -31,4 +31,3 @@ export const TitleBox = ({ title }: {title: string}) => {
     )
 }
 
-
