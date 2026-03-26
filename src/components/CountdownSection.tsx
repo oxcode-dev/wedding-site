@@ -12,8 +12,7 @@ export const CountDownSection = () => {
             const currentYear: number = currentTime.getFullYear();
             const xmasDate: Date | number = new Date(`June 24 ${currentYear + 1} 00:00:00`);
 
-            // @ts-ignore
-            const diff: number = xmasDate - currentTime;
+            const diff: number = xmasDate.getTime() - currentTime.getTime();
     
             const d:number = Math.floor(diff / 1000 / 60 / 60 / 24);
             const h:number = Math.floor(diff / 1000 / 60 / 60) % 24;
