@@ -49,7 +49,6 @@ const PeopleLists = ({ list } : PeopleListsType) => {
     return (
         <>
             <motion.div 
-                // @ts-ignore
                 variants={variants} initial="boxInitial" whileInView='boxAnimate' transition='boxTransition'
                 className='flex flex-wrap w-full max-w-6xl mx-auto'
             >
@@ -86,7 +85,6 @@ const PeopleContainer = () => {
                         variants={variants}
                         initial='tabInitial'
                         whileInView='tabAnimate'
-                        // @ts-ignore
                         transition='tabTransition'
                         className="w-full flex justify-center space-x-3"
                     >
@@ -112,7 +110,6 @@ const PeopleContainer = () => {
                             initial='boxInitial'
                             whileInView='boxAnimate'
                             exit='boxInitial'
-                            // @ts-ignore
                             transition='boxTransition'
                             className="pt-12"
                         >
