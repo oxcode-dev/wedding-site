@@ -39,7 +39,7 @@ export const Loader = ({ isLoading }: { isLoading: boolean}) => {
                             initial='hidden' whileInView='show'
                             transition={{ type: "spring", duration: 0.4, delay: 0.5}}
                             className='text-3xl md:text-6xl text-red-600'
-                        >Jovian&hearts;2024</motion.h2>
+                        >Jovian&hearts;2026</motion.h2>
 
                         <motion.h5 className='text-xl md:text-3xl text-gray-600 py-6' 
                             variants={variants}

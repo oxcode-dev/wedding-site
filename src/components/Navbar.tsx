@@ -97,7 +97,7 @@ export const Navbar = () => {
                                 animate='animate'
                                 className='text-3xl'
                             >
-                                <a href="#">Jovian&hearts;2024</a>
+                                <a href="#">Jovian&hearts;2026</a>
                             </motion.h1>
                         </div>
 
@@ -137,7 +137,7 @@ export const Navbar = () => {
                         <h1
                             className='text-3xl text-red-600'
                         >
-                            <a href="#">Jovian&hearts;2024</a>
+                            <a href="#">Jovian&hearts;2026</a>
                         </h1>
                         <motion.a 
                             href="#"

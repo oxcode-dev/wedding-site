@@ -39,21 +39,21 @@ type eventsDetailsType = {
 export const eventsDetails: eventsDetailsType[] = [
     {
         title: 'The Reception',
-        date: 'August 1st, 2024',
+        date: 'August 1st, 2026',
         time: '9AM - 11PM',
         venue: '32 big bro road, Chanpai, London.',
         img: 'https://i.pinimg.com/474x/ea/b5/87/eab587d1cbb485686f7f975e82111887.jpg',
     },
     {
         title: 'The Ceremony',
-        date: 'August 1st, 2024',
+        date: 'August 1st, 2026',
         time: '1PM - 3PM',
         venue: '32 big bro road, Chanpai, London.',
         img: 'https://i.pinimg.com/564x/50/76/22/50762292f6e94849dc50e258db6cbdea.jpg'
     },
     {
         title: 'Wedding Party',
-        date: 'August 1st, 2024',
+        date: 'August 1st, 2026',
         time: '3PM - 8PM',
         venue: '32 big bro road, Chanpai, London.',
         img: 'https://i.pinimg.com/564x/77/3e/6f/773e6f3981ff66f5d9175b6c31fb054b.jpg'

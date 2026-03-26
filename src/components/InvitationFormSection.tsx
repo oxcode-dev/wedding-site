@@ -13,7 +13,7 @@ export const InvitationFormSection = () => {
 
                         <div className='pb-4'>
                             <p>
-                                Please reserve before June 16th, 2024.
+                                Please reserve before June 16th, 2026.
                             </p>
                         </div>
                         <form>

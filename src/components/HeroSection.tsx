@@ -16,7 +16,7 @@ export const HeroSection = () => {
                         <motion.p variants={variants} className='text-xl'>Now Our Heart Together</motion.p>
                         <motion.h1 variants={variants} className='text-4xl md:text-6xl leading-loose tracking-wider py-8'>John & Vivian</motion.h1>
                         <motion.h5 variants={variants} className='text-2xl'>We're Getting Married</motion.h5>
-                        {/* <h5 className='text-2xl'>23 June 2024</h5> */}
+                        {/* <h5 className='text-2xl'>23 June 2026</h5> */}
                     </motion.div>
                 </motion.div>
             </div>
