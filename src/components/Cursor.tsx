@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 export const Cursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
-    useEffect(() => {
-        const mouseMove = (e:React.MouseEvent) => {
-            setPosition({ x: e.clientX ?? 0, y: e.clientY ?? 0 });
+     useEffect(() => {
+        const updateMousePosition = (ev: MouseEvent) => {
+            setPosition({ x: ev.clientX, y: ev.clientY });
         };
 
-        window.addEventListener("mousemove", () => mouseMove);
+        window.addEventListener('mousemove', updateMousePosition);
 
         return () => {
-            window.removeEventListener("mousemove",() =>  mouseMove);
+            window.removeEventListener('mousemove', updateMousePosition);
         };
     }, []);
 
