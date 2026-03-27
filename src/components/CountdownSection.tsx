@@ -10,9 +10,9 @@ export const CountDownSection = () => {
         const countdown = () => {
             const currentTime : Date | number = new Date();
             const currentYear: number = currentTime.getFullYear();
-            const xmasDate: Date | number = new Date(`June 24 ${currentYear + 1} 00:00:00`);
+            const eventDate: Date | number = new Date(`June 24 ${currentYear + 1} 00:00:00`);
 
-            const diff: number = xmasDate.getTime() - currentTime.getTime();
+            const diff: number = eventDate.getTime() - currentTime.getTime();
     
             const d:number = Math.floor(diff / 1000 / 60 / 60 / 24);
             const h:number = Math.floor(diff / 1000 / 60 / 60) % 24;
