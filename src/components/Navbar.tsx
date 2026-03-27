@@ -31,9 +31,8 @@ const Links = ({ setIsToggled }: LinksProps) => {
         },
     };
 
-    const handleClick = (e: React.FormEvent) => {
+    const handleClick = () => {
         setIsToggled(false)
-        e.preventDefault()
     }
   
     return (
@@ -41,7 +40,7 @@ const Links = ({ setIsToggled }: LinksProps) => {
             {tabs.map((item) => (
                 <motion.a
                     href={`#${slugify(item)}`}
-                    onClick={e => handleClick(e)}
+                    onClick={() => handleClick()}
                     key={item}
                     variants={itemVariants}
                     whileHover={{ scale: 1.1 }}
