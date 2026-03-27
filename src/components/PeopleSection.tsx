@@ -14,9 +14,9 @@ const variants = {
     boxTransition: { duration: 0.4 },
     cardInitial: { y: 100, opacity: 0 },
     cardAnimate: { y: 0, opacity: 1 },
-    cardTransition: { duration: 0.4 },
+    cardTransition: { duration: 0.4, delay: 1 },
 }
-
+// transition={{ delay: 1 }}
 type PeopleCardType = {
     person: bridemaidsType | undefined
 }
@@ -26,8 +26,7 @@ const PeopleCard = ({ person }: PeopleCardType) => {
         <>
             <motion.div 
                 viewport={{ once: true }}
-                // @ts-ignore
-                variants={variants} initial="cardInitial" whileInView='cardAnimate' transition="    cardTransition"
+                variants={variants} initial="cardInitial" whileInView='cardAnimate' transition="cardTransition"
                 className='h-full w-full relative group'
             >
                 <motion.img src={person?.img} variants={variants} className='h-full w-full object-cover' />
