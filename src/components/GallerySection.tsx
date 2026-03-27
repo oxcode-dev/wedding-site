@@ -79,7 +79,7 @@ export const GallerySection = () => {
                     <div className='w-full mx-auto'>
                         <div className='flex flex-wrap w-full'>
                             {
-                                [...Array(15).keys()].map(num => (
+                                [...Array(10).keys()].map(num => (
                                     <motion.div 
                                         variants={variants} 
                                         transition={{ delay: num * 0.2, type: "spring", duration: 0.75, ease: "easeOut",}} 

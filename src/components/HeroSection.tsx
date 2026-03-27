@@ -9,9 +9,10 @@ export const HeroSection = () => {
     return (
         <>
             <div className='h-screen w-full relative'>
-                <div style={{ backgroundImage: `url(${hero})` }} className='h-full bg-norepeat bg-fixed bg-cover w-full absolute bg-center'></div>
+                <div style={{ backgroundImage: `url(${hero})` }} className='hidden md:flex h-full bg-norepeat bg-fixed bg-cover w-full absolute bg-center'></div>
+                <img className='h-full w-full object-cover md:hidden relative ' src={hero} />
 
-                <motion.div variants={variants} initial='initial' whileInView='animate' className='h-full relative flex flex-col items-center justify-end pb-12 px-4 w-full'>
+                <motion.div variants={variants} initial='initial' whileInView='animate' className='z-10 h-full absolute flex flex-col items-center justify-end pb-12 px-4 w-full'>
                     <motion.div variants={variants} whileHover={{ scale: 0.7}} className='text-white text-center bg-gray-900/30 p-8 md:p-20 border-l-8 border-gray-900/60 rounded'>
                         <motion.p variants={variants} className='text-xl'>Now Our Heart Together</motion.p>
                         <motion.h1 variants={variants} className='text-4xl md:text-6xl leading-loose tracking-wider py-8'>John & Vivian</motion.h1>
