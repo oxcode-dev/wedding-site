@@ -16,7 +16,6 @@ const variants = {
     cardAnimate: { y: 0, opacity: 1 },
     cardTransition: { duration: 0.4, delay: 1 },
 }
-// transition={{ delay: 1 }}
 type PeopleCardType = {
     person: bridemaidsType | undefined
 }
@@ -26,7 +25,9 @@ const PeopleCard = ({ person }: PeopleCardType) => {
         <>
             <motion.div 
                 viewport={{ once: true }}
-                variants={variants} initial="cardInitial" whileInView='cardAnimate' transition="cardTransition"
+                variants={variants} initial="cardInitial" whileInView='cardAnimate' 
+                // transition="cardTransition"
+                transition={{ duration: 0.4 }}
                 className='h-full w-full relative group'
             >
                 <motion.img src={person?.img} variants={variants} className='h-full w-full object-cover' />
@@ -48,7 +49,9 @@ const PeopleLists = ({ list } : PeopleListsType) => {
     return (
         <>
             <motion.div 
-                variants={variants} initial="boxInitial" whileInView='boxAnimate' transition='boxTransition'
+                variants={variants} initial="boxInitial" whileInView='boxAnimate' 
+                // transition='boxTransition'
+                transition={{ duration: 0.4 }}
                 className='flex flex-wrap w-full max-w-6xl mx-auto'
             >
                 <motion.div variants={variants} className='w-full md:w-2/5 md:py-3 px-3 md:px-0'>
@@ -84,7 +87,8 @@ const PeopleContainer = () => {
                         variants={variants}
                         initial='tabInitial'
                         whileInView='tabAnimate'
-                        transition='tabTransition'
+                        transition={{ duration: 0.4 }}
+                        // transition='tabTransition'
                         className="w-full flex justify-center space-x-3"
                     >
                         {tabs.map((item) => (
@@ -109,7 +113,8 @@ const PeopleContainer = () => {
                             initial='boxInitial'
                             whileInView='boxAnimate'
                             exit='boxInitial'
-                            transition='boxTransition'
+                            transition={{ duration: 0.4 }}
+                            // transition='boxTransition'
                             className="pt-12"
                         >
                             {selectedTab === 'bridemaids' 
